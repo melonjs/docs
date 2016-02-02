@@ -1,7 +1,9 @@
 <head>
 <script type="text/javascript">
 <!--
-   window.location.replace("http://melonjs.github.io/docs/", "http://melonjs.github.io/melonJS/docs/");
+    var newUrl = window.location.toString();
+    newUrl.replace("melonjs.github.io/docs/", "melonjs.github.io/melonJS/docs/");
+    window.location.replace(newUrl);
 //-->
 </script>
 </head>
