@@ -8,7 +8,8 @@ redirect_from:
 ---
 
 <script type="text/javascript">
-  window.top.location = document.referrer.replace("/docs", "/melonJS/docs") || "//melonjs.github.io/melonJS/docs/";
+  var replaced = document.referrer.replace("/docs", "/melonJS/docs") || "//melonjs.github.io/melonJS/docs/";
+  window.top.location = (document.referrer.indexOf("//melonjs.github.io/docs") > 0) ? replaced : "//melonjs.github.io/melonJS/docs/";
 </script>
 <h1>Redirecting...</h1>
 
